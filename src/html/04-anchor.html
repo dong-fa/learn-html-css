@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이퍼링크</title>
+  </head>
+  <body>
+    <h1>하이퍼링크</h1>
+    <h2>택스트 링크</h2>
+    <a href="https://bootcamp.likelion.net/" target="_blank"
+      >멋쟁이 사자처럼 부트캠프</a
+    >
+    <br />
+    <!-- 타겟 속성의 _blank 속성은 현재의 페이지를 벗어나지 않고 새로운 창을 띄워서 링크를 띄워준다. 
+		 _가 없을시 새창을 띄우는건 동일하지만 그 창을 계속 사용하기 떄문에 의도와 다른 동작이 발생할 수 있다. -->
+    <a
+      href="https://www.w3schools.com/html/"
+      title="툴팁처럼 정보를 넘길 수 있음"
+      target="_blank"
+      rel="noopener noreferrer"
+      >W3Schools HTML Tutorial</a
+    >
+    <!-- title 속성은 글로벌 속성으로 대부분의 태그에 사용가능함 마우스를 해당 부분에 올렸을시 툴팁과 같은기능을 제공함
+		 			다만 유의할점은 웹접근성 관점에서 봤을때 이렇게 보여질 툴팁이 마우스호버된 상태에서 움직여도 지속될 수 있게끔 하는것이 권장됨 -->
+    <h2>이미지 링크</h2>
+    <a
+      href="https://www.apple.com/"
+      title="애플 홈페이지로 이동"
+      target="_self"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="/src/assets/apple/apple_watch.jpeg"
+        alt="애플워치"
+        width="200"
+        height="142"
+      />
+    </a>
+    <br />
+    <h2>예제</h2>
+
+    <img
+      src="/src/assets/cafew/card-02-@1x.jpg"
+      alt="카페안 풍경"
+      width="350"
+      height="200"
+    />
+    <h1>
+      RESPONSIVE WEB <br />
+      DESIGN STRATEGIES
+    </h1>
+    <h2>반응형 웹디자인 전략</h2>
+    <a href="/" target="_blank">
+      <div>강의 정보</div>
+    </a>
+    <br />
+    <a href="https://machinelearningworkshop.com">Machine Learning Workshop</a>
+    <a href="#teachers">Our teachers</a>
+    <a href="https://machinelearningworkshop.com#teachers">MLW teachers</a>
+    <a href="mailto:cdh0283@gmail.com">Email Hal</a>
+    <a href="tel:8005551212">Call Hal</a>
+  </body>
+</html>
