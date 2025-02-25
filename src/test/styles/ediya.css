@@ -9,12 +9,13 @@ header {
   .ediya-logo {
     color: var(--font-color);
     float: left;
+    font-weight: 900;
     margin: 0;
   }
 
   .navi-menu {
     list-style: none;
-    float: right;
+    float: left;
 
     li {
       float: left;
