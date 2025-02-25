@@ -1,0 +1,32 @@
+body {
+  font-size: 16px;
+  --font-color: #24388d;
+}
+
+header {
+  display: flow-root;
+
+  .ediya-logo {
+    color: var(--font-color);
+    float: left;
+    margin: 0;
+  }
+
+  .navi-menu {
+    list-style: none;
+    float: right;
+
+    li {
+      float: left;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--font-color);
+      }
+    }
+  }
+}
