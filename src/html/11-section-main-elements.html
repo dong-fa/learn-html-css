@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>섹션과 메인요소</title>
+  </head>
+  <body>
+    <!-- header와 footer는 여러 섹션에서 쓰일 수 있음 최상단에서 쓰이게 되면 전체 컨텐츠의 영역이 되고 다른 섹션내에서 사용하면
+		 해당 섹션내의 헤더와 푸터가 된다. -->
+    <header class="header">
+      <h1>머리말</h1>
+      <nav class="navigation">메뉴</nav>
+    </header>
+    <!-- article은 독립되어 완료되는 컨텐츠가 주로 들어온다. section은 그 외의 컨텐츠가 들어온다. -->
+    <!-- main의 요소는 한페이지에 한번만 사용 가능하다. 여러번 사용하면 웹표준을 위반한다.-->
+    <main>
+      <article><p>콘텐츠 섹션1</p></article>
+      <article><p>콘텐츠 섹션2</p></article>
+    </main>
+    <aside>
+      <section><p>부가정보</p></section>
+    </aside>
+    <footer><p>바닥글</p></footer>
+  </body>
+</html>
