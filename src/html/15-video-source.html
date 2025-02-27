@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video source 요소</title>
+  </head>
+  <body>
+    <!-- video의 controls 속성은 플레이어UI가 나오도록 하는 속성 -->
+    <!-- <source>에 경로를 줘서 재생 가능 할 수도 src로 경로를 지정해서 재생할 수 도있다.-->
+    <video>
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.ogg"
+        type="video/ogg"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.mov"
+        type="video/mov"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.webm"
+        type="video/webm"
+      />
+    </video>
+    <video controls muted poster="/src/assets/video/poster.jpg">
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="/src/assets/video/stories-en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English Caption"
+      />
+    </video>
+  </body>
+</html>
