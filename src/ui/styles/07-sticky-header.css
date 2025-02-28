@@ -1,0 +1,42 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+.brand {
+  background-color: yellow;
+
+  a.logo {
+    display: block;
+  }
+}
+
+.button-circle {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: aquamarine;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inline-size: 0.5rem;
+    block-size: 0.5rem;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background-color: #ffff;
+  }
+}
+
+.input {
+  display: flex;
+  flex-flow: row nowrap;
+
+  input {
+    block-size: 1.5rem;
+    border: solid var(--pastel-gray);
+    font-size: 0.875rem;
+    padding: 0.125rem 0.5rem;
+    flex: 1 0 0;
+  }
+}
