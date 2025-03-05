@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 요소와 인풋요소</title>
+  </head>
+  <body>
+    <h1>폼 요소</h1>
+    <h2>인풋 관련 요소</h2>
+    <!-- 한 줄 입력 서식 -->
+    <form action="/" method="post">
+      <fieldset>
+        <legend>폼 서식</legend>
+        <div>
+          <label for="name">이름</label>
+          <!-- required는 필수입력속성 aria-required는 굳이 쓰지 않아도됨 
+					 aria-required는 웹접근성을 위한 속성으로 스크린리더가 읽을때 필수입력이라고 알려줌 
+					 required만 적어도 스크린 리더가 읽어줌 aria-required는 커스텀 input을 만들었을때 사용-->
+          <input type="text" id="name" required aria-required="true" />
+        </div>
+        <div>
+          <label for="pw">패스워드</label>
+          <!-- placeholder는 입력창에 미리 표시할 텍스트를 지정해주는 속성 -->
+          <input type="password" id="pw" required placeholder="비번입력" />
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="search">검색</label>
+          <!-- search는 html5에 추가된 속성 -->
+          <input type="search" id="search" />
+        </div>
+        <div>
+          <label for="classHtml">HTML</label>
+          <input type="checkbox" id="classHtml" value="HTML" />
+          <label for="classJS">JS</label>
+          <input type="checkbox" id="classJS" value="JS" />
+          <label for="classCSS">CSS</label>
+          <input type="checkbox" id="classCSS" value="CSS" />
+        </div>
+        <!-- name으로 그룹을 묶어주게 되면 중복 체크를 막을 수 있음  -->
+        <div>
+          <input type="radio" name="clsaaRoom" id="classLikelion1" />
+          <label for="classLikelion1">회고1팀</label>
+          <input type="radio" name="clsaaRoom" id="classLikelion2" />
+          <label for="classLikelion2">회고2팀</label>
+          <input type="radio" name="clsaaRoom" id="classLikelion3" />
+          <label for="classLikelion3">회고3팀</label>
+        </div>
+        <div>
+          <input type="submit" value="전송" />
+        </div>
+      </fieldset>
+    </form>
+    <hr />
+    <!-- <fomr>
+      <fieldset>
+        <legend>폼 제목</legend>
+        <div>
+          <label for="userId">아이디</label>
+          <input type="text" id="userId" />
+        </div>
+        <div>
+          <label for="userPw">비밀번호</label>
+          <input type="text" id="userPw" />
+        </div>
+        <div>
+          <label for="time">시간</label>
+          <input type="datetime-local" id="time" />
+        </div>
+        <div>
+          <label for="file">파일</label>
+          <input type="file" id="file" />
+        </div>
+      </fieldset>
+    </fomr> -->
+  </body>
+</html>
