@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>폼 선택 텍스트영역 요소</h1>
+    <h2>폼 선택 요소</h2>
+    <form action="/" method="post">
+      <div>
+        <label for="petSelect">반려동물</label>
+        <select name="petSelect" id="petSelect">
+          <option selected>--좋아하는 애완동물을 선택하세요--</option>
+          <optgroup label="애완동물">
+            <option value="dog">강아지</option>
+            <option value="cat">고양이</option>
+            <option value="rabbit">토끼</option>
+            <option value="hamster">햄스터</option>
+          </optgroup>
+          <optgroup label="파충류">
+            <option value="snake">아나콘다</option>
+            <option value="lizard">도마뱀</option>
+            <option value="frog">개구리</option>
+            <option value="dino">공룡</option>
+          </optgroup>
+        </select>
+      </div>
+    </form>
+    <hr />
+    <h2>폼 텍스트영역 요소</h2>
+    <form action="/" method="post">
+      <div>
+        <label for="title">제목</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <div>
+        <label for="description">내용</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="10"
+          rows="10"
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>
